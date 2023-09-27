@@ -3,23 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/profile_page_fragment">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.app.river.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/profile_page_fragment"
+        android:name="com.app.river.ui.profile.ProfileFragment"
+        android:label="@string/title_profile_page"
+        tools:layout="@layout/fragment_profile" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.app.river.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/challange_fragment"
+        android:name="com.app.river.ui.challange.ChallangeFragment"
+        android:label="@string/title_challange"
+        tools:layout="@layout/fragment_challange" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.app.river.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/project_ideas_fragment"
+        android:name="com.app.river.ui.projectIdeas.ProjectIdeaFragment"
+        android:label="@string/title_project_ideas"
+        tools:layout="@layout/fragment_project_ideas" />
+
+    <fragment
+        android:id="@+id/friends_fragments"
+        android:name="com.app.river.ui.friends.FriendFragment"
+        android:label="@string/title_project_ideas"
+        tools:layout="@layout/fragment_friends" />
 </navigation>
